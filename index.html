@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <!-- Form  -->
+        <form id="calculatorForm">
+            <!-- Number 1  -->
+            <input type="number" id="num1" placeholder="Enter first number">
+            <!-- Operator  -->
+            <select id="operator">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <!-- Number 2  -->
+            <input type="number" id="num2" placeholder="Enter second number">
+            <!-- When user click on Calculate button calculate() function will be call -->
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <!-- Result shown here  -->
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
